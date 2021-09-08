@@ -6,6 +6,8 @@ The zeroth number in the fibonacci sequence is 0. The first number is 1
 Negative numbers should return None
 """
 def fibonacci(position):
+  if (position < 0):
+    return None
   if (position == 0): 
     return 0
   if (position == 1):
@@ -15,6 +17,7 @@ def fibonacci(position):
 
 # Test cases
 print("The 1st Fibonacci number: ", fibonacci(1))
+print("The 2nd Fibonacci number: ", fibonacci(2))
 print("The 21st Fibonacci number: ", fibonacci(21))
 
 assert(fibonacci(0) == 0)
